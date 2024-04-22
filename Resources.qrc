@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>src/icons/minus-circle-svgrepo-com.svg</file>
+        <file>src/icons/plus-circle-svgrepo-com.svg</file>
+        <file>src/icons/wallet-minus-svgrepo-com.svg</file>
+    </qresource>
+</RCC>
