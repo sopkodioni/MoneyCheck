@@ -1,7 +1,6 @@
 #include "mainwindow.h"
 
 #include <QApplication>
-#include "styleshandler.h"
 #include <QFile>
 #include <QStyleFactory>
 #include <QStyle>
