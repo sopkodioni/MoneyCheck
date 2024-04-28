@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 
 #include <QPixmap>
+#include "styleshandler.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -11,23 +12,25 @@ MainWindow::MainWindow(QWidget *parent)
     ui->stackedWidget->setCurrentWidget(ui->walletsPage);
 }
 
-MainWindow::~MainWindow()
-{
-    delete ui;
-}
 
-void MainWindow::on_pushButton_clicked()
+
+void MainWindow::on_walletsButton_clicked()
 {
     ui->stackedWidget->setCurrentWidget(ui->walletsPage);
 }
 
-void MainWindow::on_pushButton_2_clicked()
+void MainWindow::on_revenuesButton_clicked()
 {
-    ui->stackedWidget->setCurrentWidget(ui->page_2);
+    ui->stackedWidget->setCurrentWidget(ui->revenuesPage);
 }
 
-void MainWindow::on_pushButton_3_clicked()
+void MainWindow::on_expenditureButton_clicked()
 {
-    ui->stackedWidget->setCurrentWidget(ui->page_3);
+    ui->stackedWidget->setCurrentWidget(ui->expendituresPage);
 }
 
+
+MainWindow::~MainWindow()
+{
+    delete ui;
+}

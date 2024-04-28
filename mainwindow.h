@@ -19,11 +19,11 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_walletsButton_clicked();
 
-    void on_pushButton_2_clicked();
+    void on_revenuesButton_clicked();
 
-    void on_pushButton_3_clicked();
+    void on_expenditureButton_clicked();
 
 private:
     Ui::MainWindow *ui;
