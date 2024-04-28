@@ -99,7 +99,7 @@
         <bool>false</bool>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.051, y1:0.6, x2:0.051, y2:0, stop:0 rgba(193, 219, 196, 255), stop:1 rgba(255, 255, 255, 255));</string>
        </property>
        <property name="text">
         <string>Доходи</string>

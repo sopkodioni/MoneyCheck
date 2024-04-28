@@ -1,7 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
-#include <QPixmap>
 #include "styleshandler.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -10,9 +8,14 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     ui->stackedWidget->setCurrentWidget(ui->walletsPage);
+    setStyles();
 }
 
-
+void MainWindow::setStyles(){
+    ui->walletsButton->setStyleSheet(StylesHandler::getButtonStyles());
+    ui->revenuesButton->setStyleSheet(StylesHandler::getButtonStyles());
+    ui->expenditureButton->setStyleSheet(StylesHandler::getButtonStyles());
+}
 
 void MainWindow::on_walletsButton_clicked()
 {
