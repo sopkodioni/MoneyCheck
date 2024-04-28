@@ -1,6 +1,12 @@
 #include "mainwindow.h"
 
 #include <QApplication>
+#include "styleshandler.h"
+#include <QFile>
+#include <QStyleFactory>
+#include <QStyle>
+#include <QWidget>
+
 
 int main(int argc, char *argv[])
 {
