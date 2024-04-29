@@ -11,11 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     setStyles();
 }
 
-void MainWindow::setStyles(){
-    ui->walletsButton->setStyleSheet(StylesHandler::getButtonStyles());
-    ui->revenuesButton->setStyleSheet(StylesHandler::getButtonStyles());
-    ui->expenditureButton->setStyleSheet(StylesHandler::getButtonStyles());
-}
+
 
 void MainWindow::on_walletsButton_clicked()
 {
@@ -32,6 +28,11 @@ void MainWindow::on_expenditureButton_clicked()
     ui->stackedWidget->setCurrentWidget(ui->expendituresPage);
 }
 
+void MainWindow::setStyles(){
+    ui->walletsButton->setStyleSheet(StylesHandler::getButtonStyles());
+    ui->revenuesButton->setStyleSheet(StylesHandler::getButtonStyles());
+    ui->expenditureButton->setStyleSheet(StylesHandler::getButtonStyles());
+}
 
 MainWindow::~MainWindow()
 {
